@@ -48,13 +48,13 @@
 
 //JS Arrays
 
- const fruits = ['apples','oranges','mangoes', 4];
-console.log(fruits[2]);
+//  const fruits = ['apples','oranges','mangoes', 4];
+// console.log(fruits[2]);
 //arrays start from 0 index
 
 //add at the end
-fruits[1] = 'banana';
-console.log(fruits);
+// fruits[1] = 'banana';
+// console.log(fruits);
 
 // fruits.push('Watermeloon');
 // console.log(typeof(fruits));
@@ -72,9 +72,122 @@ console.log(fruits);
 //     }
 // }
 // // console.log(person.address.City);
+// person.Email = "yaseensaleem48@gmail.com";
+// //JS Proxies
+// const {name , fatherName, address:{City}} = person;
+// console.log(person.address.Town);
 
-// const {name , fatherName} = person;
-// console.log(name);
 
 
+
+//JS Hoisting//
+// hoisted(); // Output: "This function has been hoisted."
+
+// function hoisted() {
+//   console.log('This function has been hoisted.');
+// };
+
+//Function Expressions//
+
+// expression(); //Output: "TypeError: expression is not a function
+
+// var expression = function() {
+//   console.log('Will this work?');
+// };
+
+//**Array of objects* */
+
+
+const toDos = [
+    {
+    id : 1,
+    text : 'Learn ES6',
+    isCompleted : "true"
+    },
+    {
+    id : 2,
+    text : 'Meeting with manager',
+    isCompleted : "true"
+    },
+    {
+    id : 3,
+    text : 'Start jira Project',
+    isCompleted : "true"
+    }
+];
+
+//print todos array using arrow functions
+//toDos.forEach((todo) => console.log(todo));
+
+
+
+
+//task is to get the text of task with id 2
+//to do this you have to make proxy handler for this 
+
+//console.log(toDos[1].text);
+//convert JS Object in JSON to be used as API's or for server side programming
+// const todoJSON = JSON.stringify(toDos);
+// console.log(todoJSON);
+
+// for (let i = 0; i < 10 ; i++)
+// {
+//     console.log(`For Loop number ${i}`);
+// }
+
+// for (let i = 0 ; i <toDos.length; i++)
+// {
+//     console.log(toDos[i].text);
+// }
+
+// for(let todo of toDos)
+// {
+//     console.log(todo.text)
+// }
+
+
+///*****Issues in this code snippet */
+// const toDoCompleted = toDos.filter(function(todo)
+// {
+// return todo.isCompleted == true;
+// }).map(function(todo)
+// {
+// return todo.text;
+// });
+// console.log(toDoCompleted);
+
+///*****Issues in this code snippet closed*/
+
+//**Functions */
+// function addNumbers(num1,num2)
+// {
+//     return(num1 + num2);
+// }
+// console.log(addNumbers(1,2));
+
+
+//Arrow functions//
+
+// const addNumbers = (num1, num2) => (num1 + num2);
+
+// console.log(addNumbers(5,5));
+
+function Person (firstName, lastName, dob)
+{
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.dob = dob;
+    this.getBirthYear = function(){
+        return this.dob;
+    }
+    this.getFullName = function(){
+        return `${firstName} ${this.lastName}`;
+    }
+}
+
+//Instantiate object using constructor Function
+const person1 = new Person("yaeen","saleem",'14-02-1997');
+console.log(person1.getBirthYear());
+console.log(person1.getFullName());
+console.log(person1);
 

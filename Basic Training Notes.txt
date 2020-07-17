@@ -1,3 +1,32 @@
+*******JS Concepts********
+1.Variables and scoping
+1.1 Hoisting
+2. JS Datatypes
+primitive datatypes and dynamic typing
+3. JS Strings
+4.Template Literals
+5. Arrays
+6. Object Literalls
+6.1: Objects inside objects
+6.2 used Proxy in objects for object safety.
+7. Array of Objects
+8. JSON
+9. Loops
+for for foreach map filter
+10. Conditional Statements
+11. functions
+11.1 Arrow Functions
+12. This Keyword
+13. JS OOP
+14. JS Prototypes
+
+
+
+
+
+
+
+
 Let allow you to change values
 let x = 14;
 x = 12;
@@ -35,15 +64,7 @@ Css Preprocessors.
 Seen about AJAX Calls which are used to not perform page refreshing
 and without page refresh you can show something or some popups
 or modals on your screen.
-1.Variables and scoping
-2. JS Datatypes
-primitive datatypes and dynamic typing
-3. JS Strings
-4.Template Literals
-5. Arrays
-6. Object Literalls
-6.1: Objects inside objects
-6.2 used Proxy in objects for object safety.
+
 
 
 
@@ -76,10 +97,7 @@ console.log(name);
 
 we can pull something out from an object using this syntax.
 
-
-
-
-
+//Strict Mode
 
 
 
@@ -106,11 +124,35 @@ orange to banana.
 
 *why typeof array is object??
 
+//Day End
+**Some confusions in Higher order array functions like foreach
+and map and filter??
+
 **Proxy work in JS
 
 install history tool in VSCode
 
+**Array of Objects**
 
+**JSON**
+json is same as object literals
+
+**For Loops**
+
+forEach
+toDos.forEach(function(todo)
+{
+console.log(todo.text);
+});
+
+**Map**
+Map returns an array no matter from where it is coming
+
+**JS OOP**
+Constructor Functions
+
+use this keyword to set constructor Functions and values which 
+are passed in Constructor functions.
 
 
 
