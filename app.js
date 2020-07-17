@@ -1,3 +1,3 @@
-var a = 5;
-console.log(a);
-var b = 5;
+var x = 14;
+x = 12;
+console.log(x);
