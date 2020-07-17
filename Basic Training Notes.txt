@@ -1,0 +1,124 @@
+Let allow you to change values
+let x = 14;
+x = 12;
+console.log(x);//12
+it will print 12
+
+var also do the same behaviour allow you to change values 
+but in case of const it will give compile time error when you try
+to change a value declared by const
+var x = 14;
+x = 12;
+console.log(x); // compiler error
+
+var:deceleration and initialization in one step
+let: declaration and initialziation in one step
+const: can not do declaration and initialization in one step
+
+Scoping
+Let and const have a block scope but var has function scope.
+you can access let and const in block scope but you can access
+var outside of the block scope as well.
+
+***Questions***
+What is Hoisting in JS Variables?
+
+div p 
+{
+} //this will pick up all those paragraphs having a parent element
+div.
+
+responsive webpage always responds to change.
+Css Preprocessors.
+
+**Making Ajax Calls Using JavaScript.
+Seen about AJAX Calls which are used to not perform page refreshing
+and without page refresh you can show something or some popups
+or modals on your screen.
+1.Variables and scoping
+2. JS Datatypes
+primitive datatypes and dynamic typing
+3. JS Strings
+4.Template Literals
+5. Arrays
+6. Object Literalls
+6.1: Objects inside objects
+6.2 used Proxy in objects for object safety.
+
+
+
+
+
+let and const have block scope
+in let you can change values after assignment
+in var you cant change after assignment
+always use const unless you gonna know you will reassign values
+
+//Datatypes
+primitive datatypes will tell you which values you can assign
+to the var let and const
+//String,boolean,null,undefined
+for string concatetaion in ES6 we have got Template Literals
+or template strings
+
+//Arrays
+Javascript is not statically type.
+
+accessing an index of an array.
+
+
+//Object literals
+object literalls are basically key value pairs
+
+**object within an object
+const {name , fatherName} = person;
+console.log(name);
+
+we can pull something out from an object using this syntax.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+***Questions***
+*What is Hoisting in JS Variables?
+*as we can't change a const variable or array
+const fruits = ['apples','oranges','mangoes', 4];
+console.log(fruits[2]);
+//arrays start from 0 index
+
+//add at the end
+fruits[1] = 'banana';
+console.log(fruits);
+this code was also showing no error as i am changing a const type
+orange to banana.
+
+*why typeof array is object??
+
+**Proxy work in JS
+
+install history tool in VSCode
+
+
+
+
+
+
+
+
+
+
+
+
+
